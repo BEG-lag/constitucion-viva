@@ -114,7 +114,7 @@ export interface Graph {
   nodes: GraphNode[];
   edges: GraphEdge[];
   constitution: Record<string, Record<string, number>>;
-  stats: { mentions: number; articleCitations: number; resolved: number; unresolved: number; constitutional: number; constitutionalResolved: number };
+  stats: { mentions: number; articleCitations: number; resolved: number; unresolved: number; constitutional: number; constitutionalResolved: number; regulations: number };
 }
 
 export interface Meta {
