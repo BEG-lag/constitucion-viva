@@ -96,7 +96,7 @@
    "words": 11066,
    "published": "2025-03-18",
    "lastReform": null,
-   "selfReferences": 44,
+   "selfReferences": 43,
    "out": 10,
    "in": 5
   },
@@ -109,7 +109,7 @@
    "words": 8431,
    "published": "2025-03-18",
    "lastReform": null,
-   "selfReferences": 38,
+   "selfReferences": 37,
    "out": 8,
    "in": 3
   },
@@ -122,7 +122,7 @@
    "words": 8426,
    "published": "2025-03-18",
    "lastReform": null,
-   "selfReferences": 68,
+   "selfReferences": 67,
    "out": 7,
    "in": 2
   },
@@ -330,7 +330,7 @@
    "words": 6906,
    "published": "2025-03-20",
    "lastReform": "2025-11-14",
-   "selfReferences": 51,
+   "selfReferences": 50,
    "out": 3,
    "in": 1
   },
@@ -447,7 +447,7 @@
    "words": 155341,
    "published": "2013-12-11",
    "lastReform": "2024-04-01",
-   "selfReferences": 1025,
+   "selfReferences": 1023,
    "out": 8,
    "in": 5
   },
@@ -740,7 +740,7 @@
   {
    "source": "cff",
    "target": "lisr",
-   "mentions": 96,
+   "mentions": 95,
    "articles": 44,
    "top": [
     [
@@ -2205,8 +2205,8 @@
   {
    "source": "lisr",
    "target": "cff",
-   "mentions": 106,
-   "articles": 73,
+   "mentions": 104,
+   "articles": 72,
    "top": [
     [
      "16-C",
@@ -2233,11 +2233,11 @@
      3
     ],
     [
-     "29",
+     "32-A",
      3
     ],
     [
-     "32-A",
+     "58",
      3
     ]
    ]
@@ -2897,11 +2897,12 @@
   }
  },
  "stats": {
-  "mentions": 824,
-  "articleCitations": 335,
-  "resolved": 334,
-  "unresolved": 1,
+  "mentions": 821,
+  "articleCitations": 333,
+  "resolved": 333,
+  "unresolved": 0,
   "constitutional": 49,
-  "constitutionalResolved": 49
+  "constitutionalResolved": 49,
+  "regulations": 9
  }
 }

@@ -170,6 +170,47 @@ const textDir = join(DATA, 'text');
 rmSync(textDir, { recursive: true, force: true });
 /** [0, n]: keep n characters of the previous text; [1, s]: insert s; [-1, s]: delete s. */
 type Op = [0, number] | [1 | -1, string];
+/**
+ * A raw word diff of a rewritten sentence alternates single words ("sin" / "Las",
+ * "perjuicio" / "leyes"...). For reading, short runs of shared words between two
+ * changes (up to two words) are folded into one deletion and one insertion, the
+ * way a person would mark up the change. The text rebuilt from the ops is the same.
+ */
+function readableOps(changes: { value: string; added: boolean; removed: boolean }[]): Op[] {
+  const ops: Op[] = [];
+  let del = '';
+  let ins = '';
+  let open = false;
+  const flush = () => {
+    if (del) ops.push([-1, del]);
+    if (ins) ops.push([1, ins]);
+    del = '';
+    ins = '';
+    open = false;
+  };
+  changes.forEach((ch, i) => {
+    if (ch.added || ch.removed) {
+      if (ch.removed) del += ch.value;
+      else ins += ch.value;
+      open = true;
+      return;
+    }
+    const next = changes[i + 1];
+    const small = countWords(ch.value) <= 2 && ch.value.length <= 16 && !ch.value.includes('\n');
+    if (open && small && next && (next.added || next.removed)) {
+      del += ch.value;
+      ins += ch.value;
+      return;
+    }
+    flush();
+    const last = ops[ops.length - 1];
+    if (last && last[0] === 0) last[1] += ch.value.length;
+    else ops.push([0, ch.value.length]);
+  });
+  flush();
+  return ops;
+}
+
 interface ArticleVersion {
   date: string;
   decrees: number[];
@@ -217,7 +258,13 @@ for (const [i, v] of vs.entries()) {
       ops = [[1, sec.text]];
     } else {
       // Whitespace-significant word diff: old = kept + removed and new = kept + added, exactly.
-      ops = diffWordsWithSpace(before, sec.text).map((c): Op => (c.added ? [1, c.value] : c.removed ? [-1, c.value] : [0, c.value.length]));
+      const changes = diffWordsWithSpace(before, sec.text);
+      // Word counts come from the raw diff; the stored ops are cleaned up for reading.
+      for (const ch of changes) {
+        if (ch.added) a += countWords(ch.value);
+        if (ch.removed) r += countWords(ch.value);
+      }
+      ops = readableOps(changes);
       let rebuilt = '';
       let at = 0;
       for (const op of ops) {
@@ -228,10 +275,6 @@ for (const [i, v] of vs.entries()) {
         else at += op[1].length;
       }
       assert(rebuilt === sec.text && at === before.length, `diff of article ${id} at ${v.date} rebuilds the text`);
-      for (const [op, t] of ops) {
-        if (op === 1) a += countWords(t);
-        if (op === -1) r += countWords(t);
-      }
       changed.push(id);
     }
     const byDecree = i === 0 ? [] : inRange.filter((n) => decrees[n - 1]?.articles.includes(id));
@@ -338,7 +381,7 @@ write('graph.json', {
   constitution: graph.constitution,
   stats: graph.stats,
 });
-write('graph-sample.json', { note: 'Deterministic random sample of law-name matches, for the manual precision check in docs/metodo.md.', sample: graph.sample });
+write('graph-sample.json', { note: 'Deterministic random sample of law-name matches, for the manual precision check in docs/metodo.md, and every unresolved article citation.', sample: graph.sample, unresolved: graph.unresolved });
 
 console.log('7/7 summary');
 const lastDecree = decrees[decrees.length - 1];

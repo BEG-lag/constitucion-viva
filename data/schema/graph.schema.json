@@ -48,7 +48,7 @@
     "constitution": { "type": "object", "additionalProperties": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 1 } } },
     "stats": {
       "type": "object",
-      "required": ["mentions", "articleCitations", "resolved", "unresolved", "constitutional", "constitutionalResolved"],
+      "required": ["mentions", "articleCitations", "resolved", "unresolved", "constitutional", "constitutionalResolved", "regulations"],
       "additionalProperties": false,
       "properties": {
         "mentions": { "type": "integer" },
@@ -56,7 +56,8 @@
         "resolved": { "type": "integer" },
         "unresolved": { "type": "integer" },
         "constitutional": { "type": "integer" },
-        "constitutionalResolved": { "type": "integer" }
+        "constitutionalResolved": { "type": "integer" },
+        "regulations": { "type": "integer", "description": "Names skipped because they belong to a regulation." }
       }
     }
   }

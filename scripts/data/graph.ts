@@ -14,6 +14,8 @@
  *     constitucional". A cited article is "resolved" only if that article
  *     exists in the current text of the target; unresolved ones are counted
  *     but not drawn.
+ *     A name preceded by "Reglamento de la|del" is a regulation, not the law,
+ *     and is skipped (counted in stats.regulations).
  *  4. Self-references ("esta Ley", "la presente Ley", "este Código",
  *     "esta Constitución") are counted per law, not drawn as edges.
  */
@@ -105,9 +107,13 @@ export interface GraphResult {
     unresolved: number;
     constitutional: number;
     constitutionalResolved: number;
+    /** Names skipped because they belong to a regulation ("Reglamento de la Ley ..."). */
+    regulations: number;
   };
   /** Small random sample of matches with context, for the manual precision check. */
   sample: { source: string; target: string; context: string }[];
+  /** Article citations whose article does not exist in the cited law. */
+  unresolved: { source: string; target: string; article: string; context: string }[];
 }
 
 interface Matcher {
@@ -128,8 +134,9 @@ export function buildGraph(laws: LawText[], seed = 17): GraphResult {
   const edges = new Map<string, Edge & { counts: Map<string, number> }>();
   const self: Record<string, number> = {};
   const constitution: Record<string, Record<string, number>> = {};
-  const stats = { mentions: 0, articleCitations: 0, resolved: 0, unresolved: 0, constitutional: 0, constitutionalResolved: 0 };
+  const stats = { mentions: 0, articleCitations: 0, resolved: 0, unresolved: 0, constitutional: 0, constitutionalResolved: 0, regulations: 0 };
   const allMatches: { source: string; target: string; context: string }[] = [];
+  const unresolved: GraphResult['unresolved'] = [];
   const cpeum = bySlug.get('cpeum');
 
   for (const law of laws) {
@@ -145,6 +152,10 @@ export function buildGraph(laws: LawText[], seed = 17): GraphResult {
           const end = start + r[0].length;
           if (masked.slice(start, end).includes('\u0000')) continue;
           for (let i = start; i < end; i++) masked[i] = '\u0000';
+          if (/Reglamentos?\s+(?:de\s+la|del|de)\s*$/i.test(text.slice(Math.max(0, start - 30), start))) {
+            stats.regulations++;
+            continue;
+          }
           found.push({ slug: m.slug, start, end });
         }
       }
@@ -182,6 +193,7 @@ export function buildGraph(laws: LawText[], seed = 17): GraphResult {
               }
             } else {
               stats.unresolved++;
+              unresolved.push({ source: law.slug, target: f.slug, article: id, context: text.slice(Math.max(0, f.start - 120), f.end).replace(/\s+/g, ' ') });
             }
           }
         }
@@ -231,5 +243,6 @@ export function buildGraph(laws: LawText[], seed = 17): GraphResult {
     constitution,
     stats,
     sample,
+    unresolved,
   };
 }
