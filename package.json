@@ -1,0 +1,79 @@
+{
+  "name": "constitucion-viva",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The Mexican Constitution of 1917, alive: every reform since 1917, article by article, with word-level diffs since 2006 and the citation web of 36 federal laws.",
+  "keywords": [
+    "mexico",
+    "constitution",
+    "constitucion",
+    "data-visualization",
+    "d3",
+    "law",
+    "legal-tech",
+    "open-data"
+  ],
+  "homepage": "https://beg-lag.github.io/constitucion-viva/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BEG-lag/constitucion-viva.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BEG-lag/constitucion-viva/issues"
+  },
+  "license": "MIT",
+  "author": "Benjamín Esponda García (https://pivotek.mx)",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "data": "node scripts/data/build.ts",
+    "data:offline": "node scripts/data/build.ts --offline",
+    "check:data": "node scripts/validate-data.ts",
+    "check:dashes": "node scripts/check-dashes.ts",
+    "check": "npm run typecheck && npm run lint && npm run check:data && npm run check:dashes && npm run build",
+    "screenshots": "node scripts/screenshots.ts"
+  },
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "d3-array": "^3.2.5",
+    "d3-drag": "^3.0.1",
+    "d3-ease": "^3.0.2",
+    "d3-force": "^3.0.1",
+    "d3-interpolate": "^3.0.2",
+    "d3-scale": "^4.0.3",
+    "d3-selection": "^3.0.1",
+    "d3-shape": "^3.2.1",
+    "d3-zoom": "^3.0.1",
+    "diff": "^9.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/d3-array": "^3.2.2",
+    "@types/d3-drag": "^3.0.7",
+    "@types/d3-ease": "^3.0.2",
+    "@types/d3-force": "^3.0.10",
+    "@types/d3-interpolate": "^3.0.4",
+    "@types/d3-scale": "^4.0.9",
+    "@types/d3-selection": "^3.0.12",
+    "@types/d3-shape": "^3.2.0",
+    "@types/d3-zoom": "^3.0.9",
+    "@types/node": "^24.19.2",
+    "ajv": "^8.20.0",
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0",
+    "node-html-parser": "^9.0.7",
+    "playwright-core": "^1.65.1",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.73.0",
+    "vite": "^8.3.8"
+  }
+}
