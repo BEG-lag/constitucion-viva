@@ -38,7 +38,8 @@
     "check:data": "node scripts/validate-data.ts",
     "check:dashes": "node scripts/check-dashes.ts",
     "check": "npm run typecheck && npm run lint && npm run check:data && npm run check:dashes && npm run build",
-    "screenshots": "node scripts/screenshots.ts"
+    "screenshots": "node scripts/screenshots.ts",
+    "banner": "node scripts/banner.ts"
   },
   "dependencies": {
     "@fontsource/cormorant-garamond": "^5.3.0",

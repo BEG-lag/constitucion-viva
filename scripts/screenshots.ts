@@ -259,6 +259,17 @@ async function main(): Promise<void> {
     await ctx.close();
   }
 
+  // Smaller PNGs for the README, when pngquant is installed.
+  if (!CHECK_ONLY) {
+    for (const f of readdirSync(SHOTS).filter((x) => x.endsWith('.png'))) {
+      try {
+        execFileSync('pngquant', ['--force', '--skip-if-larger', '--quality', '75-95', '--ext', '.png', join(SHOTS, f)]);
+      } catch {
+        // not installed or no gain: keep the original
+      }
+    }
+  }
+
   // ---------- video of the time machine
   if (!CHECK_ONLY) {
     const dir = join(ROOT, '.cache', 'video');
@@ -275,10 +286,10 @@ async function main(): Promise<void> {
     await ctx.close();
     const webm = readdirSync(dir).find((f) => f.endsWith('.webm'));
     if (webm) {
-      const out = join(ROOT, 'assets', 'time-machine.webm');
+      const out = join(dir, 'time-machine.webm');
       renameSync(join(dir, webm), out);
       try {
-        execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-ss', '0.6', '-i', out, '-vf', 'fps=8,scale=720:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=64:stats_mode=diff[p];[b][p]paletteuse=dither=bayer:bayer_scale=5:diff_mode=rectangle', join(ROOT, 'assets', 'time-machine.gif')]);
+        execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-ss', '0.8', '-t', '22', '-i', out, '-vf', 'fps=7,scale=640:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=48:stats_mode=diff[p];[b][p]paletteuse=dither=bayer:bayer_scale=5:diff_mode=rectangle', join(ROOT, 'assets', 'time-machine.gif')]);
         execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', out, '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '28', '-movflags', '+faststart', join(ROOT, 'assets', 'time-machine.mp4')]);
       } catch (e) {
         console.warn(`ffmpeg not available or failed: ${(e as Error).message}`);
