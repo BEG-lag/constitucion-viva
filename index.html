@@ -15,7 +15,69 @@
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preload" href="%BASE_URL%data/constitution.json" as="fetch" crossorigin />
-  </head>
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Dataset",
+ "name": "Constitución viva: reformas a la Constitución mexicana de 1917, artículo por artículo",
+ "alternateName": "constitucion-viva",
+ "description": "Dataset de las reformas a la Constitución Política de los Estados Unidos Mexicanos: 285 decretos de reforma publicados en el Diario Oficial de la Federación desde 1921 y 857 reformas por artículo, atribuidas por fecha a periodos presidenciales y legislaturas, con el texto de cada artículo y sus cambios palabra por palabra desde 2006, y la red de citas entre 36 leyes federales. Fuentes: Cámara de Diputados (LeyesBiblio) y el repositorio leyes-mx. No oficial; no constituye asesoría legal.",
+ "url": "https://beg-lag.github.io/constitucion-viva/",
+ "sameAs": "https://github.com/BEG-lag/constitucion-viva",
+ "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+ "isAccessibleForFree": true,
+ "creator": {
+  "@type": "Person",
+  "name": "Benjamín Esponda García",
+  "url": "https://pivotek.mx/",
+  "sameAs": [
+   "https://github.com/BEG-lag"
+  ]
+ },
+ "inLanguage": "es",
+ "temporalCoverage": "1917-02-05/..",
+ "spatialCoverage": {
+  "@type": "Place",
+  "name": "México"
+ },
+ "keywords": [
+  "México",
+  "Constitución",
+  "reformas constitucionales",
+  "Diario Oficial de la Federación",
+  "derecho",
+  "legislación",
+  "datos abiertos"
+ ],
+ "distribution": [
+  {
+   "@type": "DataDownload",
+   "name": "Decretos y reformas por artículo (JSON)",
+   "encodingFormat": "application/json",
+   "contentUrl": "https://raw.githubusercontent.com/BEG-lag/constitucion-viva/main/data/constitution.json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Crecimiento del texto (JSON)",
+   "encodingFormat": "application/json",
+   "contentUrl": "https://raw.githubusercontent.com/BEG-lag/constitucion-viva/main/data/growth.json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Red de citas entre leyes (JSON)",
+   "encodingFormat": "application/json",
+   "contentUrl": "https://raw.githubusercontent.com/BEG-lag/constitucion-viva/main/data/graph.json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Metadatos y fuentes (JSON)",
+   "encodingFormat": "application/json",
+   "contentUrl": "https://raw.githubusercontent.com/BEG-lag/constitucion-viva/main/data/meta.json"
+  }
+ ]
+}
+</script>
+</head>
   <body>
     <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
 
