@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "graph.schema.json",
+  "title": "graph.json: citations between the 36 laws of leyes-mx",
+  "type": "object",
+  "required": ["groups", "nodes", "edges", "constitution", "stats"],
+  "additionalProperties": false,
+  "properties": {
+    "groups": { "type": "object", "additionalProperties": { "type": "string" } },
+    "nodes": {
+      "type": "array",
+      "minItems": 36,
+      "maxItems": 36,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "abbreviation", "group", "articles", "words", "published", "lastReform", "selfReferences", "out", "in"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z]+$" },
+          "title": { "type": "string" },
+          "abbreviation": { "type": "string" },
+          "group": { "type": "string" },
+          "articles": { "type": "integer", "minimum": 1 },
+          "words": { "type": "integer", "minimum": 1 },
+          "published": { "type": "string" },
+          "lastReform": { "type": ["string", "null"] },
+          "selfReferences": { "type": "integer", "minimum": 0 },
+          "out": { "type": "integer", "minimum": 0 },
+          "in": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "target", "mentions", "articles", "top"],
+        "additionalProperties": false,
+        "properties": {
+          "source": { "type": "string" },
+          "target": { "type": "string" },
+          "mentions": { "type": "integer", "minimum": 0, "description": "Exact mentions of the target's official name (or alias) in the source's body." },
+          "articles": { "type": "integer", "minimum": 0, "description": "Citations to specific articles of the target that exist in its current text." },
+          "top": { "type": "array", "items": { "type": "array", "items": [{ "type": "string" }, { "type": "integer" }], "minItems": 2, "maxItems": 2 } }
+        }
+      }
+    },
+    "constitution": { "type": "object", "additionalProperties": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 1 } } },
+    "stats": {
+      "type": "object",
+      "required": ["mentions", "articleCitations", "resolved", "unresolved", "constitutional", "constitutionalResolved"],
+      "additionalProperties": false,
+      "properties": {
+        "mentions": { "type": "integer" },
+        "articleCitations": { "type": "integer" },
+        "resolved": { "type": "integer" },
+        "unresolved": { "type": "integer" },
+        "constitutional": { "type": "integer" },
+        "constitutionalResolved": { "type": "integer" }
+      }
+    }
+  }
+}

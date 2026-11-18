@@ -1,0 +1,2907 @@
+{
+ "groups": {
+  "constitucion": "Constitución",
+  "energia": "Energía (reforma de 2025)",
+  "recursos": "Minería, agua, tierra y ambiente",
+  "empresa": "Empresa, comercio y competencia",
+  "intangibles": "Propiedad intelectual y datos personales",
+  "general": "Trabajo, civil, amparo y procedimiento",
+  "publico": "Administración pública, fiscal y penal"
+ },
+ "nodes": [
+  {
+   "id": "cpeum",
+   "title": "Constitución Política de los Estados Unidos Mexicanos",
+   "abbreviation": "CPEUM",
+   "group": "constitucion",
+   "articles": 136,
+   "words": 75414,
+   "published": "1917-02-05",
+   "lastReform": "2026-10-07",
+   "selfReferences": 212,
+   "out": 2,
+   "in": 30
+  },
+  {
+   "id": "lse",
+   "title": "Ley del Sector Eléctrico",
+   "abbreviation": "LSE",
+   "group": "energia",
+   "articles": 188,
+   "words": 30729,
+   "published": "2025-03-18",
+   "lastReform": null,
+   "selfReferences": 116,
+   "out": 9,
+   "in": 6
+  },
+  {
+   "id": "lsh",
+   "title": "Ley del Sector Hidrocarburos",
+   "abbreviation": "LSH",
+   "group": "energia",
+   "articles": 166,
+   "words": 33614,
+   "published": "2025-03-18",
+   "lastReform": null,
+   "selfReferences": 131,
+   "out": 10,
+   "in": 8
+  },
+  {
+   "id": "lepecfe",
+   "title": "Ley de la Empresa Pública del Estado, Comisión Federal de Electricidad",
+   "abbreviation": "LEPECFE",
+   "group": "energia",
+   "articles": 131,
+   "words": 23394,
+   "published": "2025-03-18",
+   "lastReform": null,
+   "selfReferences": 54,
+   "out": 4,
+   "in": 0
+  },
+  {
+   "id": "lepepm",
+   "title": "Ley de la Empresa Pública del Estado, Petróleos Mexicanos",
+   "abbreviation": "LEPEPM",
+   "group": "energia",
+   "articles": 126,
+   "words": 22148,
+   "published": "2025-03-18",
+   "lastReform": null,
+   "selfReferences": 53,
+   "out": 6,
+   "in": 1
+  },
+  {
+   "id": "lcne",
+   "title": "Ley de la Comisión Nacional de Energía",
+   "abbreviation": "LCNE",
+   "group": "energia",
+   "articles": 28,
+   "words": 5076,
+   "published": "2025-03-18",
+   "lastReform": "2025-12-26",
+   "selfReferences": 13,
+   "out": 5,
+   "in": 0
+  },
+  {
+   "id": "lpte",
+   "title": "Ley de Planeación y Transición Energética",
+   "abbreviation": "LPTE",
+   "group": "energia",
+   "articles": 100,
+   "words": 11066,
+   "published": "2025-03-18",
+   "lastReform": null,
+   "selfReferences": 44,
+   "out": 10,
+   "in": 5
+  },
+  {
+   "id": "lbio",
+   "title": "Ley de Biocombustibles",
+   "abbreviation": "LBio",
+   "group": "energia",
+   "articles": 46,
+   "words": 8431,
+   "published": "2025-03-18",
+   "lastReform": null,
+   "selfReferences": 38,
+   "out": 8,
+   "in": 3
+  },
+  {
+   "id": "lgeo",
+   "title": "Ley de Geotermia",
+   "abbreviation": "LGeo",
+   "group": "energia",
+   "articles": 66,
+   "words": 8426,
+   "published": "2025-03-18",
+   "lastReform": null,
+   "selfReferences": 68,
+   "out": 7,
+   "in": 2
+  },
+  {
+   "id": "lih",
+   "title": "Ley de Ingresos sobre Hidrocarburos",
+   "abbreviation": "LIH",
+   "group": "energia",
+   "articles": 64,
+   "words": 12671,
+   "published": "2014-08-11",
+   "lastReform": "2025-12-28",
+   "selfReferences": 63,
+   "out": 5,
+   "in": 3
+  },
+  {
+   "id": "lansi",
+   "title": "Ley de la Agencia Nacional de Seguridad Industrial y de Protección al Medio Ambiente del Sector Hidrocarburos",
+   "abbreviation": "LANSI",
+   "group": "energia",
+   "articles": 38,
+   "words": 6915,
+   "published": "2014-08-11",
+   "lastReform": "2022-05-11",
+   "selfReferences": 21,
+   "out": 3,
+   "in": 0
+  },
+  {
+   "id": "lmin",
+   "title": "Ley de Minería",
+   "abbreviation": "LMin",
+   "group": "recursos",
+   "articles": 79,
+   "words": 13377,
+   "published": "1992-06-26",
+   "lastReform": "2023-05-08",
+   "selfReferences": 99,
+   "out": 5,
+   "in": 5
+  },
+  {
+   "id": "lan",
+   "title": "Ley de Aguas Nacionales",
+   "abbreviation": "LAN",
+   "group": "recursos",
+   "articles": 215,
+   "words": 48308,
+   "published": "1992-12-01",
+   "lastReform": "2025-12-11",
+   "selfReferences": 303,
+   "out": 11,
+   "in": 4
+  },
+  {
+   "id": "lgag",
+   "title": "Ley General de Aguas",
+   "abbreviation": "LGAg",
+   "group": "recursos",
+   "articles": 45,
+   "words": 5291,
+   "published": "2025-12-11",
+   "lastReform": null,
+   "selfReferences": 17,
+   "out": 2,
+   "in": 1
+  },
+  {
+   "id": "lgeepa",
+   "title": "Ley General del Equilibrio Ecológico y la Protección al Ambiente",
+   "abbreviation": "LGEEPA",
+   "group": "recursos",
+   "articles": 270,
+   "words": 39545,
+   "published": "1988-01-28",
+   "lastReform": "2026-01-19",
+   "selfReferences": 155,
+   "out": 7,
+   "in": 6
+  },
+  {
+   "id": "lagra",
+   "title": "Ley Agraria",
+   "abbreviation": "LAgra",
+   "group": "recursos",
+   "articles": 201,
+   "words": 18279,
+   "published": "1992-02-26",
+   "lastReform": "2025-11-14",
+   "selfReferences": 68,
+   "out": 4,
+   "in": 4
+  },
+  {
+   "id": "ccom",
+   "title": "Código de Comercio",
+   "abbreviation": "CCom",
+   "group": "empresa",
+   "articles": 1641,
+   "words": 74184,
+   "published": "1889-10-07",
+   "lastReform": "2026-02-18",
+   "selfReferences": 101,
+   "out": 6,
+   "in": 11
+  },
+  {
+   "id": "lgsm",
+   "title": "Ley General de Sociedades Mercantiles",
+   "abbreviation": "LGSM",
+   "group": "empresa",
+   "articles": 277,
+   "words": 20916,
+   "published": "1934-08-04",
+   "lastReform": "2025-12-26",
+   "selfReferences": 48,
+   "out": 3,
+   "in": 8
+  },
+  {
+   "id": "lgtoc",
+   "title": "Ley General de Títulos y Operaciones de Crédito",
+   "abbreviation": "LGTOC",
+   "group": "empresa",
+   "articles": 462,
+   "words": 41416,
+   "published": "1932-08-27",
+   "lastReform": "2024-03-26",
+   "selfReferences": 53,
+   "out": 2,
+   "in": 3
+  },
+  {
+   "id": "lie",
+   "title": "Ley de Inversión Extranjera",
+   "abbreviation": "LIE",
+   "group": "empresa",
+   "articles": 42,
+   "words": 4530,
+   "published": "1993-12-27",
+   "lastReform": "2024-05-27",
+   "selfReferences": 26,
+   "out": 1,
+   "in": 2
+  },
+  {
+   "id": "lfce",
+   "title": "Ley Federal de Competencia Económica",
+   "abbreviation": "LFCE",
+   "group": "empresa",
+   "articles": 153,
+   "words": 28814,
+   "published": "2014-05-23",
+   "lastReform": "2025-11-14",
+   "selfReferences": 155,
+   "out": 6,
+   "in": 5
+  },
+  {
+   "id": "lfpc",
+   "title": "Ley Federal de Protección al Consumidor",
+   "abbreviation": "LFPC",
+   "group": "empresa",
+   "articles": 188,
+   "words": 23283,
+   "published": "1992-12-24",
+   "lastReform": "2025-12-23",
+   "selfReferences": 108,
+   "out": 8,
+   "in": 5
+  },
+  {
+   "id": "lfda",
+   "title": "Ley Federal del Derecho de Autor",
+   "abbreviation": "LFDA",
+   "group": "intangibles",
+   "articles": 258,
+   "words": 22307,
+   "published": "1996-12-24",
+   "lastReform": "2026-05-14",
+   "selfReferences": 107,
+   "out": 7,
+   "in": 4
+  },
+  {
+   "id": "lfppi",
+   "title": "Ley Federal de Protección a la Propiedad Industrial",
+   "abbreviation": "LFPPI",
+   "group": "intangibles",
+   "articles": 421,
+   "words": 44911,
+   "published": "2020-07-01",
+   "lastReform": "2026-04-03",
+   "selfReferences": 261,
+   "out": 6,
+   "in": 0
+  },
+  {
+   "id": "lfpdppp",
+   "title": "Ley Federal de Protección de Datos Personales en Posesión de los Particulares",
+   "abbreviation": "LFPDPPP",
+   "group": "intangibles",
+   "articles": 64,
+   "words": 6906,
+   "published": "2025-03-20",
+   "lastReform": "2025-11-14",
+   "selfReferences": 51,
+   "out": 3,
+   "in": 1
+  },
+  {
+   "id": "lft",
+   "title": "Ley Federal del Trabajo",
+   "abbreviation": "LFT",
+   "group": "general",
+   "articles": 1265,
+   "words": 163112,
+   "published": "1970-04-01",
+   "lastReform": "2026-05-14",
+   "selfReferences": 293,
+   "out": 5,
+   "in": 9
+  },
+  {
+   "id": "ccf",
+   "title": "Código Civil Federal",
+   "abbreviation": "CCF",
+   "group": "general",
+   "articles": 3103,
+   "words": 125649,
+   "published": "1928-05-26",
+   "lastReform": "2025-11-14",
+   "selfReferences": 49,
+   "out": 5,
+   "in": 10
+  },
+  {
+   "id": "lamp",
+   "title": "Ley de Amparo, Reglamentaria de los artículos 103 y 107 de la Constitución Política de los Estados Unidos Mexicanos",
+   "abbreviation": "LAmp",
+   "group": "general",
+   "articles": 272,
+   "words": 38000,
+   "published": "2013-04-02",
+   "lastReform": "2025-10-16",
+   "selfReferences": 111,
+   "out": 4,
+   "in": 3
+  },
+  {
+   "id": "cnpcf",
+   "title": "Código Nacional de Procedimientos Civiles y Familiares",
+   "abbreviation": "CNPCF",
+   "group": "general",
+   "articles": 1191,
+   "words": 129218,
+   "published": "2023-06-07",
+   "lastReform": "2026-01-15",
+   "selfReferences": 282,
+   "out": 3,
+   "in": 13
+  },
+  {
+   "id": "loapf",
+   "title": "Ley Orgánica de la Administración Pública Federal",
+   "abbreviation": "LOAPF",
+   "group": "publico",
+   "articles": 72,
+   "words": 30644,
+   "published": "1976-12-29",
+   "lastReform": "2026-05-07",
+   "selfReferences": 10,
+   "out": 7,
+   "in": 6
+  },
+  {
+   "id": "lfpa",
+   "title": "Ley Federal de Procedimiento Administrativo",
+   "abbreviation": "LFPA",
+   "group": "publico",
+   "articles": 119,
+   "words": 9180,
+   "published": "1994-08-04",
+   "lastReform": "2025-11-14",
+   "selfReferences": 24,
+   "out": 3,
+   "in": 16
+  },
+  {
+   "id": "lgra",
+   "title": "Ley General de Responsabilidades Administrativas",
+   "abbreviation": "LGRA",
+   "group": "publico",
+   "articles": 235,
+   "words": 25500,
+   "published": "2016-07-18",
+   "lastReform": "2025-12-15",
+   "selfReferences": 93,
+   "out": 8,
+   "in": 8
+  },
+  {
+   "id": "cff",
+   "title": "Código Fiscal de la Federación",
+   "abbreviation": "CFF",
+   "group": "publico",
+   "articles": 421,
+   "words": 128245,
+   "published": "1981-12-31",
+   "lastReform": "2026-04-09",
+   "selfReferences": 563,
+   "out": 10,
+   "in": 13
+  },
+  {
+   "id": "lisr",
+   "title": "Ley del Impuesto sobre la Renta",
+   "abbreviation": "LISR",
+   "group": "publico",
+   "articles": 236,
+   "words": 155341,
+   "published": "2013-12-11",
+   "lastReform": "2024-04-01",
+   "selfReferences": 1025,
+   "out": 8,
+   "in": 5
+  },
+  {
+   "id": "cpf",
+   "title": "Código Penal Federal",
+   "abbreviation": "CPF",
+   "group": "publico",
+   "articles": 553,
+   "words": 58245,
+   "published": "1931-08-14",
+   "lastReform": "2026-03-13",
+   "selfReferences": 57,
+   "out": 10,
+   "in": 6
+  },
+  {
+   "id": "cnpp",
+   "title": "Código Nacional de Procedimientos Penales",
+   "abbreviation": "CNPP",
+   "group": "publico",
+   "articles": 490,
+   "words": 62776,
+   "published": "2014-03-05",
+   "lastReform": "2025-11-28",
+   "selfReferences": 171,
+   "out": 6,
+   "in": 3
+  }
+ ],
+ "edges": [
+  {
+   "source": "ccf",
+   "target": "ccom",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "ccf",
+   "target": "cnpcf",
+   "mentions": 29,
+   "articles": 1,
+   "top": [
+    [
+     "178",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "ccf",
+   "target": "cpeum",
+   "mentions": 10,
+   "articles": 9,
+   "top": [
+    [
+     "27",
+     6
+    ],
+    [
+     "123",
+     3
+    ]
+   ]
+  },
+  {
+   "source": "ccf",
+   "target": "lft",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "ccf",
+   "target": "lie",
+   "mentions": 1,
+   "articles": 2,
+   "top": [
+    [
+     "17",
+     1
+    ],
+    [
+     "17-A",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "ccom",
+   "target": "ccf",
+   "mentions": 4,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "ccom",
+   "target": "cnpcf",
+   "mentions": 7,
+   "articles": 3,
+   "top": [
+    [
+     "348",
+     1
+    ],
+    [
+     "349",
+     1
+    ],
+    [
+     "350",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "ccom",
+   "target": "cpeum",
+   "mentions": 1,
+   "articles": 2,
+   "top": [
+    [
+     "106",
+     1
+    ],
+    [
+     "116",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "ccom",
+   "target": "lfpa",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "ccom",
+   "target": "lfpdppp",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "ccom",
+   "target": "lgtoc",
+   "mentions": 4,
+   "articles": 1,
+   "top": [
+    [
+     "403",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "cff",
+   "target": "ccf",
+   "mentions": 1,
+   "articles": 1,
+   "top": [
+    [
+     "1834 Bis",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "cff",
+   "target": "cnpcf",
+   "mentions": 1,
+   "articles": 3,
+   "top": [
+    [
+     "348",
+     1
+    ],
+    [
+     "349",
+     1
+    ],
+    [
+     "350",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "cff",
+   "target": "cpeum",
+   "mentions": 2,
+   "articles": 1,
+   "top": [
+    [
+     "131",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "cff",
+   "target": "cpf",
+   "mentions": 6,
+   "articles": 7,
+   "top": [
+    [
+     "400 Bis",
+     3
+    ],
+    [
+     "105",
+     1
+    ],
+    [
+     "107",
+     1
+    ],
+    [
+     "222",
+     1
+    ],
+    [
+     "222 Bis",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "cff",
+   "target": "lamp",
+   "mentions": 2,
+   "articles": 1,
+   "top": [
+    [
+     "135",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "cff",
+   "target": "lfce",
+   "mentions": 1,
+   "articles": 1,
+   "top": [
+    [
+     "120",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "cff",
+   "target": "lft",
+   "mentions": 3,
+   "articles": 2,
+   "top": [
+    [
+     "15",
+     1
+    ],
+    [
+     "136",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "cff",
+   "target": "lgsm",
+   "mentions": 1,
+   "articles": 1,
+   "top": [
+    [
+     "116",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "cff",
+   "target": "lgtoc",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "cff",
+   "target": "lisr",
+   "mentions": 96,
+   "articles": 44,
+   "top": [
+    [
+     "76",
+     10
+    ],
+    [
+     "82",
+     3
+    ],
+    [
+     "79",
+     2
+    ],
+    [
+     "83",
+     2
+    ],
+    [
+     "84",
+     2
+    ],
+    [
+     "176",
+     2
+    ],
+    [
+     "179",
+     2
+    ],
+    [
+     "13",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "cnpcf",
+   "target": "ccf",
+   "mentions": 3,
+   "articles": 1,
+   "top": [
+    [
+     "15",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "cnpcf",
+   "target": "ccom",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "cnpcf",
+   "target": "cpeum",
+   "mentions": 8,
+   "articles": 6,
+   "top": [
+    [
+     "16",
+     2
+    ],
+    [
+     "110",
+     2
+    ],
+    [
+     "14",
+     1
+    ],
+    [
+     "123",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "cnpp",
+   "target": "ccf",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "cnpp",
+   "target": "cff",
+   "mentions": 5,
+   "articles": 1,
+   "top": [
+    [
+     "113 Bis",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "cnpp",
+   "target": "cnpcf",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "cnpp",
+   "target": "cpeum",
+   "mentions": 3,
+   "articles": 1,
+   "top": [
+    [
+     "19",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "cnpp",
+   "target": "cpf",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "cnpp",
+   "target": "loapf",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "cpeum",
+   "target": "lft",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "cpeum",
+   "target": "lisr",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "cpf",
+   "target": "ccom",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "cpf",
+   "target": "cff",
+   "mentions": 3,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "cpf",
+   "target": "cnpp",
+   "mentions": 6,
+   "articles": 1,
+   "top": [
+    [
+     "422",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "cpf",
+   "target": "cpeum",
+   "mentions": 8,
+   "articles": 9,
+   "top": [
+    [
+     "73",
+     4
+    ],
+    [
+     "5",
+     2
+    ],
+    [
+     "4",
+     1
+    ],
+    [
+     "27",
+     1
+    ],
+    [
+     "122",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "cpf",
+   "target": "lfce",
+   "mentions": 2,
+   "articles": 1,
+   "top": [
+    [
+     "103",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "cpf",
+   "target": "lfda",
+   "mentions": 4,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "cpf",
+   "target": "lft",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "cpf",
+   "target": "lgeepa",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "cpf",
+   "target": "lgra",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "cpf",
+   "target": "lgtoc",
+   "mentions": 3,
+   "articles": 1,
+   "top": [
+    [
+     "281",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lagra",
+   "target": "cnpcf",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lagra",
+   "target": "cpeum",
+   "mentions": 2,
+   "articles": 4,
+   "top": [
+    [
+     "27",
+     4
+    ]
+   ]
+  },
+  {
+   "source": "lagra",
+   "target": "lamp",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lagra",
+   "target": "lgsm",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lamp",
+   "target": "cnpcf",
+   "mentions": 4,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lamp",
+   "target": "cnpp",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lamp",
+   "target": "cpeum",
+   "mentions": 40,
+   "articles": 25,
+   "top": [
+    [
+     "22",
+     15
+    ],
+    [
+     "105",
+     2
+    ],
+    [
+     "14",
+     1
+    ],
+    [
+     "19",
+     1
+    ],
+    [
+     "27",
+     1
+    ],
+    [
+     "28",
+     1
+    ],
+    [
+     "104",
+     1
+    ],
+    [
+     "107",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lamp",
+   "target": "cpf",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lan",
+   "target": "ccf",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lan",
+   "target": "cff",
+   "mentions": 3,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lan",
+   "target": "cpeum",
+   "mentions": 4,
+   "articles": 4,
+   "top": [
+    [
+     "27",
+     3
+    ],
+    [
+     "115",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lan",
+   "target": "cpf",
+   "mentions": 3,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lan",
+   "target": "lagra",
+   "mentions": 4,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lan",
+   "target": "lfpa",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lan",
+   "target": "lgag",
+   "mentions": 3,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lan",
+   "target": "lgeepa",
+   "mentions": 8,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lan",
+   "target": "lgeo",
+   "mentions": 3,
+   "articles": 1,
+   "top": [
+    [
+     "2",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lan",
+   "target": "lmin",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lan",
+   "target": "loapf",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lansi",
+   "target": "cpeum",
+   "mentions": 1,
+   "articles": 1,
+   "top": [
+    [
+     "134",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lansi",
+   "target": "lfpa",
+   "mentions": 3,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lansi",
+   "target": "lgeepa",
+   "mentions": 6,
+   "articles": 2,
+   "top": [
+    [
+     "28",
+     1
+    ],
+    [
+     "111 Bis",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lbio",
+   "target": "cpeum",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lbio",
+   "target": "lfpa",
+   "mentions": 3,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lbio",
+   "target": "lfpc",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lbio",
+   "target": "lgeepa",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lbio",
+   "target": "loapf",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lbio",
+   "target": "lpte",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lbio",
+   "target": "lse",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lbio",
+   "target": "lsh",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lcne",
+   "target": "lfpa",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lcne",
+   "target": "lgra",
+   "mentions": 1,
+   "articles": 1,
+   "top": [
+    [
+     "7",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lcne",
+   "target": "lpte",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lcne",
+   "target": "lse",
+   "mentions": 6,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lcne",
+   "target": "lsh",
+   "mentions": 4,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lepecfe",
+   "target": "cpeum",
+   "mentions": 7,
+   "articles": 8,
+   "top": [
+    [
+     "25",
+     2
+    ],
+    [
+     "134",
+     2
+    ],
+    [
+     "28",
+     1
+    ],
+    [
+     "38",
+     1
+    ],
+    [
+     "123",
+     1
+    ],
+    [
+     "127",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lepecfe",
+   "target": "lft",
+   "mentions": 1,
+   "articles": 1,
+   "top": [
+    [
+     "123",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lepecfe",
+   "target": "lgra",
+   "mentions": 4,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lepecfe",
+   "target": "lse",
+   "mentions": 7,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lepepm",
+   "target": "cpeum",
+   "mentions": 6,
+   "articles": 7,
+   "top": [
+    [
+     "25",
+     2
+    ],
+    [
+     "134",
+     2
+    ],
+    [
+     "28",
+     1
+    ],
+    [
+     "123",
+     1
+    ],
+    [
+     "127",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lepepm",
+   "target": "lbio",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lepepm",
+   "target": "lft",
+   "mentions": 1,
+   "articles": 1,
+   "top": [
+    [
+     "123",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lepepm",
+   "target": "lgra",
+   "mentions": 4,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lepepm",
+   "target": "lih",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lepepm",
+   "target": "lsh",
+   "mentions": 7,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfce",
+   "target": "cnpcf",
+   "mentions": 3,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfce",
+   "target": "cpeum",
+   "mentions": 10,
+   "articles": 6,
+   "top": [
+    [
+     "28",
+     4
+    ],
+    [
+     "93",
+     1
+    ],
+    [
+     "123",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lfce",
+   "target": "cpf",
+   "mentions": 3,
+   "articles": 1,
+   "top": [
+    [
+     "107",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lfce",
+   "target": "lfpc",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfce",
+   "target": "lgra",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfce",
+   "target": "lsh",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfda",
+   "target": "ccf",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfda",
+   "target": "ccom",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfda",
+   "target": "cnpcf",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfda",
+   "target": "cpeum",
+   "mentions": 0,
+   "articles": 2,
+   "top": [
+    [
+     "2",
+     1
+    ],
+    [
+     "28",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lfda",
+   "target": "cpf",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfda",
+   "target": "lfpa",
+   "mentions": 3,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfda",
+   "target": "lgsm",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfpa",
+   "target": "ccom",
+   "mentions": 1,
+   "articles": 1,
+   "top": [
+    [
+     "49",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lfpa",
+   "target": "cff",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfpa",
+   "target": "cnpcf",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfpc",
+   "target": "ccf",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfpc",
+   "target": "ccom",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfpc",
+   "target": "cff",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfpc",
+   "target": "cnpcf",
+   "mentions": 2,
+   "articles": 1,
+   "top": [
+    [
+     "862",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lfpc",
+   "target": "cpeum",
+   "mentions": 0,
+   "articles": 1,
+   "top": [
+    [
+     "123",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lfpc",
+   "target": "lfce",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfpc",
+   "target": "lfpa",
+   "mentions": 5,
+   "articles": 1,
+   "top": [
+    [
+     "65",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lfpc",
+   "target": "lgsm",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfpdppp",
+   "target": "cnpcf",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfpdppp",
+   "target": "cpeum",
+   "mentions": 2,
+   "articles": 2,
+   "top": [
+    [
+     "16",
+     1
+    ],
+    [
+     "94",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lfpdppp",
+   "target": "lfpa",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfppi",
+   "target": "ccom",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfppi",
+   "target": "cff",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfppi",
+   "target": "cnpcf",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfppi",
+   "target": "lfpa",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfppi",
+   "target": "lfpc",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lfppi",
+   "target": "lft",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lft",
+   "target": "cff",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lft",
+   "target": "cpeum",
+   "mentions": 6,
+   "articles": 8,
+   "top": [
+    [
+     "123",
+     5
+    ],
+    [
+     "3",
+     1
+    ],
+    [
+     "8",
+     1
+    ],
+    [
+     "21",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lft",
+   "target": "lfda",
+   "mentions": 1,
+   "articles": 1,
+   "top": [
+    [
+     "116",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lft",
+   "target": "lgra",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lft",
+   "target": "lisr",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lgag",
+   "target": "cpeum",
+   "mentions": 2,
+   "articles": 2,
+   "top": [
+    [
+     "2",
+     1
+    ],
+    [
+     "4",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lgag",
+   "target": "lan",
+   "mentions": 5,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lgeepa",
+   "target": "cff",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lgeepa",
+   "target": "cnpcf",
+   "mentions": 1,
+   "articles": 1,
+   "top": [
+    [
+     "862",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lgeepa",
+   "target": "cpeum",
+   "mentions": 1,
+   "articles": 3,
+   "top": [
+    [
+     "27",
+     3
+    ]
+   ]
+  },
+  {
+   "source": "lgeepa",
+   "target": "lan",
+   "mentions": 6,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lgeepa",
+   "target": "lfpa",
+   "mentions": 3,
+   "articles": 1,
+   "top": [
+    [
+     "67",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lgeepa",
+   "target": "lmin",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lgeepa",
+   "target": "loapf",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lgeo",
+   "target": "cpeum",
+   "mentions": 1,
+   "articles": 1,
+   "top": [
+    [
+     "25",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lgeo",
+   "target": "lan",
+   "mentions": 2,
+   "articles": 1,
+   "top": [
+    [
+     "81",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lgeo",
+   "target": "lfpa",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lgeo",
+   "target": "lmin",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lgeo",
+   "target": "lpte",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lgeo",
+   "target": "lse",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lgeo",
+   "target": "lsh",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lgra",
+   "target": "ccf",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lgra",
+   "target": "cff",
+   "mentions": 3,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lgra",
+   "target": "cpeum",
+   "mentions": 5,
+   "articles": 3,
+   "top": [
+    [
+     "108",
+     1
+    ],
+    [
+     "113",
+     1
+    ],
+    [
+     "123",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lgra",
+   "target": "lamp",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lgra",
+   "target": "lfce",
+   "mentions": 1,
+   "articles": 1,
+   "top": [
+    [
+     "103",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lgra",
+   "target": "lfpa",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lgra",
+   "target": "lgsm",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lgra",
+   "target": "loapf",
+   "mentions": 1,
+   "articles": 4,
+   "top": [
+    [
+     "3",
+     1
+    ],
+    [
+     "45",
+     1
+    ],
+    [
+     "46",
+     1
+    ],
+    [
+     "47",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lgsm",
+   "target": "ccom",
+   "mentions": 14,
+   "articles": 12,
+   "top": [
+    [
+     "50 Bis",
+     8
+    ],
+    [
+     "89",
+     4
+    ]
+   ]
+  },
+  {
+   "source": "lgsm",
+   "target": "cff",
+   "mentions": 2,
+   "articles": 2,
+   "top": [
+    [
+     "11",
+     1
+    ],
+    [
+     "17-A",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lgsm",
+   "target": "lie",
+   "mentions": 1,
+   "articles": 2,
+   "top": [
+    [
+     "17",
+     1
+    ],
+    [
+     "17-A",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lgtoc",
+   "target": "ccom",
+   "mentions": 16,
+   "articles": 4,
+   "top": [
+    [
+     "49",
+     1
+    ],
+    [
+     "50 Bis",
+     1
+    ],
+    [
+     "89",
+     1
+    ],
+    [
+     "1070",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lgtoc",
+   "target": "lgsm",
+   "mentions": 1,
+   "articles": 1,
+   "top": [
+    [
+     "132",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lie",
+   "target": "cpeum",
+   "mentions": 5,
+   "articles": 8,
+   "top": [
+    [
+     "27",
+     8
+    ]
+   ]
+  },
+  {
+   "source": "lih",
+   "target": "cff",
+   "mentions": 4,
+   "articles": 3,
+   "top": [
+    [
+     "17-A",
+     2
+    ],
+    [
+     "69",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lih",
+   "target": "cpeum",
+   "mentions": 2,
+   "articles": 1,
+   "top": [
+    [
+     "27",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lih",
+   "target": "lgsm",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lih",
+   "target": "lisr",
+   "mentions": 12,
+   "articles": 11,
+   "top": [
+    [
+     "179",
+     3
+    ],
+    [
+     "180",
+     3
+    ],
+    [
+     "11",
+     1
+    ],
+    [
+     "33",
+     1
+    ],
+    [
+     "34",
+     1
+    ],
+    [
+     "57",
+     1
+    ],
+    [
+     "154",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lih",
+   "target": "lsh",
+   "mentions": 11,
+   "articles": 3,
+   "top": [
+    [
+     "5",
+     1
+    ],
+    [
+     "56",
+     1
+    ],
+    [
+     "57",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lisr",
+   "target": "cff",
+   "mentions": 106,
+   "articles": 73,
+   "top": [
+    [
+     "16-C",
+     15
+    ],
+    [
+     "16-A",
+     5
+    ],
+    [
+     "26",
+     4
+    ],
+    [
+     "30",
+     4
+    ],
+    [
+     "69",
+     4
+    ],
+    [
+     "14-B",
+     3
+    ],
+    [
+     "29",
+     3
+    ],
+    [
+     "32-A",
+     3
+    ]
+   ]
+  },
+  {
+   "source": "lisr",
+   "target": "cpeum",
+   "mentions": 10,
+   "articles": 9,
+   "top": [
+    [
+     "123",
+     9
+    ]
+   ]
+  },
+  {
+   "source": "lisr",
+   "target": "lagra",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lisr",
+   "target": "lfda",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lisr",
+   "target": "lft",
+   "mentions": 6,
+   "articles": 6,
+   "top": [
+    [
+     "123",
+     3
+    ],
+    [
+     "15",
+     1
+    ],
+    [
+     "132",
+     1
+    ],
+    [
+     "477",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lisr",
+   "target": "lgsm",
+   "mentions": 1,
+   "articles": 2,
+   "top": [
+    [
+     "85",
+     1
+    ],
+    [
+     "123",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lisr",
+   "target": "lih",
+   "mentions": 2,
+   "articles": 1,
+   "top": [
+    [
+     "6",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lisr",
+   "target": "lmin",
+   "mentions": 1,
+   "articles": 1,
+   "top": [
+    [
+     "12",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lmin",
+   "target": "cpeum",
+   "mentions": 0,
+   "articles": 5,
+   "top": [
+    [
+     "27",
+     2
+    ],
+    [
+     "2",
+     1
+    ],
+    [
+     "28",
+     1
+    ],
+    [
+     "123",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lmin",
+   "target": "lan",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lmin",
+   "target": "lfpa",
+   "mentions": 5,
+   "articles": 2,
+   "top": [
+    [
+     "3",
+     2
+    ]
+   ]
+  },
+  {
+   "source": "lmin",
+   "target": "lgeepa",
+   "mentions": 3,
+   "articles": 2,
+   "top": [
+    [
+     "56 Bis",
+     1
+    ],
+    [
+     "58",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lmin",
+   "target": "lisr",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "loapf",
+   "target": "cnpp",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "loapf",
+   "target": "cpeum",
+   "mentions": 13,
+   "articles": 26,
+   "top": [
+    [
+     "22",
+     6
+    ],
+    [
+     "3",
+     4
+    ],
+    [
+     "27",
+     3
+    ],
+    [
+     "21",
+     2
+    ],
+    [
+     "29",
+     2
+    ],
+    [
+     "18",
+     1
+    ],
+    [
+     "72",
+     1
+    ],
+    [
+     "89",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "loapf",
+   "target": "lfda",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "loapf",
+   "target": "lft",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "loapf",
+   "target": "lgra",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "loapf",
+   "target": "lse",
+   "mentions": 3,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "loapf",
+   "target": "lsh",
+   "mentions": 3,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lpte",
+   "target": "cpeum",
+   "mentions": 1,
+   "articles": 1,
+   "top": [
+    [
+     "25",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lpte",
+   "target": "lbio",
+   "mentions": 4,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lpte",
+   "target": "lfpa",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lpte",
+   "target": "lfpc",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lpte",
+   "target": "lgeepa",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lpte",
+   "target": "lgeo",
+   "mentions": 3,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lpte",
+   "target": "lgra",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lpte",
+   "target": "loapf",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lpte",
+   "target": "lse",
+   "mentions": 8,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lpte",
+   "target": "lsh",
+   "mentions": 5,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lse",
+   "target": "ccf",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lse",
+   "target": "ccom",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lse",
+   "target": "cpeum",
+   "mentions": 4,
+   "articles": 4,
+   "top": [
+    [
+     "27",
+     2
+    ],
+    [
+     "25",
+     1
+    ],
+    [
+     "28",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lse",
+   "target": "lagra",
+   "mentions": 3,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lse",
+   "target": "lbio",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lse",
+   "target": "lfce",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lse",
+   "target": "lfpa",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lse",
+   "target": "lfpc",
+   "mentions": 2,
+   "articles": 2,
+   "top": [
+    [
+     "2",
+     1
+    ],
+    [
+     "113",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lse",
+   "target": "lpte",
+   "mentions": 3,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lsh",
+   "target": "ccf",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lsh",
+   "target": "ccom",
+   "mentions": 2,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lsh",
+   "target": "cff",
+   "mentions": 3,
+   "articles": 2,
+   "top": [
+    [
+     "69-B",
+     2
+    ]
+   ]
+  },
+  {
+   "source": "lsh",
+   "target": "cpeum",
+   "mentions": 4,
+   "articles": 3,
+   "top": [
+    [
+     "25",
+     2
+    ],
+    [
+     "28",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lsh",
+   "target": "lagra",
+   "mentions": 3,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lsh",
+   "target": "lepepm",
+   "mentions": 3,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lsh",
+   "target": "lfpa",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lsh",
+   "target": "lih",
+   "mentions": 11,
+   "articles": 0,
+   "top": []
+  },
+  {
+   "source": "lsh",
+   "target": "lmin",
+   "mentions": 2,
+   "articles": 1,
+   "top": [
+    [
+     "28",
+     1
+    ]
+   ]
+  },
+  {
+   "source": "lsh",
+   "target": "lpte",
+   "mentions": 1,
+   "articles": 0,
+   "top": []
+  }
+ ],
+ "constitution": {
+  "2": {
+   "lmin": 1,
+   "lgag": 1,
+   "lfda": 1
+  },
+  "3": {
+   "lft": 1,
+   "loapf": 4
+  },
+  "4": {
+   "lgag": 1,
+   "cpf": 1
+  },
+  "5": {
+   "cpf": 2
+  },
+  "8": {
+   "lft": 1
+  },
+  "14": {
+   "lamp": 1,
+   "cnpcf": 1
+  },
+  "16": {
+   "lfpdppp": 1,
+   "cnpcf": 2
+  },
+  "18": {
+   "loapf": 1
+  },
+  "19": {
+   "lamp": 1,
+   "cnpp": 1
+  },
+  "21": {
+   "lft": 1,
+   "loapf": 2
+  },
+  "22": {
+   "lamp": 15,
+   "loapf": 6
+  },
+  "25": {
+   "lse": 1,
+   "lsh": 2,
+   "lepecfe": 2,
+   "lepepm": 2,
+   "lpte": 1,
+   "lgeo": 1
+  },
+  "27": {
+   "lse": 2,
+   "lih": 1,
+   "lmin": 2,
+   "lan": 3,
+   "lgeepa": 3,
+   "lagra": 4,
+   "lie": 8,
+   "ccf": 6,
+   "lamp": 1,
+   "loapf": 3,
+   "cpf": 1
+  },
+  "28": {
+   "lse": 1,
+   "lsh": 1,
+   "lepecfe": 1,
+   "lepepm": 1,
+   "lmin": 1,
+   "lfce": 4,
+   "lfda": 1,
+   "lamp": 1
+  },
+  "29": {
+   "loapf": 2
+  },
+  "38": {
+   "lepecfe": 1
+  },
+  "72": {
+   "loapf": 1
+  },
+  "73": {
+   "cpf": 4
+  },
+  "89": {
+   "loapf": 1
+  },
+  "90": {
+   "loapf": 1
+  },
+  "93": {
+   "lfce": 1
+  },
+  "94": {
+   "lfpdppp": 1,
+   "loapf": 1
+  },
+  "96": {
+   "loapf": 1
+  },
+  "100": {
+   "loapf": 1
+  },
+  "104": {
+   "lamp": 1
+  },
+  "105": {
+   "lamp": 2,
+   "loapf": 1
+  },
+  "106": {
+   "ccom": 1
+  },
+  "107": {
+   "lamp": 1
+  },
+  "108": {
+   "lgra": 1
+  },
+  "110": {
+   "cnpcf": 2
+  },
+  "113": {
+   "lgra": 1
+  },
+  "115": {
+   "lan": 1
+  },
+  "116": {
+   "ccom": 1
+  },
+  "122": {
+   "cpf": 1
+  },
+  "123": {
+   "lepecfe": 1,
+   "lepepm": 1,
+   "lmin": 1,
+   "lfce": 1,
+   "lfpc": 1,
+   "lft": 5,
+   "ccf": 3,
+   "cnpcf": 1,
+   "loapf": 1,
+   "lgra": 1,
+   "lisr": 9
+  },
+  "127": {
+   "lepecfe": 1,
+   "lepepm": 1
+  },
+  "131": {
+   "lamp": 1,
+   "cff": 1
+  },
+  "133": {
+   "lamp": 1
+  },
+  "134": {
+   "lepecfe": 2,
+   "lepepm": 2,
+   "lansi": 1
+  }
+ },
+ "stats": {
+  "mentions": 824,
+  "articleCitations": 335,
+  "resolved": 334,
+  "unresolved": 1,
+  "constitutional": 49,
+  "constitutionalResolved": 49
+ }
+}

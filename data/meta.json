@@ -1,0 +1,157 @@
+{
+ "generated": "2026-11-17",
+ "leyesMx": {
+  "repo": "https://github.com/BEG-lag/leyes-mx",
+  "commit": "98e27d6e4d097140eacb0b68d46ee09d2034d4c3",
+  "date": "2026-11-17"
+ },
+ "sources": [
+  {
+   "id": "crono",
+   "name": "Reformas constitucionales en orden cronológico",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/ref/cpeum_crono.htm",
+   "retrieved": "2026-11-17",
+   "sha256": "7d18349dcb1a23bccc9221e9d3047bf01e884df928fcb4ca17b3f87de8ff8f70",
+   "bytes": 953783
+  },
+  {
+   "id": "art",
+   "name": "Reformas constitucionales por artículo",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/ref/cpeum_art.htm",
+   "retrieved": "2026-11-17",
+   "sha256": "c76bd883f6b70bf9c261412c3c82e5499f0fc25a9fa342c52965f5902a3fcd77",
+   "bytes": 490811
+  },
+  {
+   "id": "per",
+   "name": "Reformas constitucionales por periodo presidencial",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/ref/cpeum_per.htm",
+   "retrieved": "2026-11-17",
+   "sha256": "460f015d42a1d0badf13fddab393cd2b10fac03cbbe67764b4a9a8daa78a6125",
+   "bytes": 232503
+  },
+  {
+   "id": "legis",
+   "name": "Reformas constitucionales y legales por legislatura",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/legis.htm",
+   "retrieved": "2026-11-17",
+   "sha256": "4725e30931988c96acf6a47c8d8e7832ac1ac26c36c5c000b1364e854b816e64",
+   "bytes": 29435
+  },
+  {
+   "id": "wikipedia",
+   "name": "Anexo: Congresos y Legislaturas del Congreso de la Unión (Wikipedia en español)",
+   "url": "https://es.wikipedia.org/w/api.php?action=parse&page=Anexo%3ACongresos_y_Legislaturas_del_Congreso_de_la_Uni%C3%B3n&prop=wikitext%7Crevid&format=json&formatversion=2",
+   "retrieved": "2026-11-17",
+   "sha256": "4abcb043cc0715fc1583442f93ddfc2cb28b6133148b1e8652d608bcd457f73e",
+   "bytes": 42988,
+   "note": "revid 172714445"
+  },
+  {
+   "id": "orig1917",
+   "name": "Constitución de 1917, texto original (transcripción de la Cámara de Diputados del DOF del 5 de febrero de 1917)",
+   "url": "https://www.diputados.gob.mx/LeyesBiblio/ref/cpeum/CPEUM_orig_05feb1917.pdf",
+   "retrieved": "2026-11-17",
+   "sha256": "d4cb7f2923e66d13de75cb0da2afb8830833ff267f90111ce7f928fa4b34923f",
+   "bytes": 195867
+  }
+ ],
+ "checks": {
+  "decreesVsLeyesMx": {
+   "compared": 285,
+   "leyesMx": 285,
+   "dateMismatches": []
+  },
+  "articleReforms": {
+   "parsed": 857,
+   "pageSummary": {
+    "articles": 856,
+    "total": 876
+   }
+  },
+  "presidentsVsTermPage": {
+   "note": "Decrees attributed by DOF date whose number does not appear in that president's block of the by-term page.",
+   "decrees": [
+    15,
+    168,
+    169
+   ]
+  },
+  "editorialChanges": {
+   "note": "Article text changed between versions without a decree touching it in that window.",
+   "items": [
+    "2@2008-08-29",
+    "3@2008-08-29",
+    "3@2014-02-10",
+    "4@2008-08-29",
+    "4@2014-07-07",
+    "5@2008-08-29",
+    "7@2008-08-29",
+    "9@2008-08-29",
+    "11@2008-08-29",
+    "27@2008-08-29",
+    "28@2008-08-29",
+    "28@2014-07-07",
+    "30@2008-08-29",
+    "31@2008-08-29",
+    "32@2008-08-29",
+    "37@2014-07-07",
+    "42@2008-08-29",
+    "49@2008-08-29",
+    "52@2008-08-29",
+    "53@2008-08-29",
+    "54@2014-07-07",
+    "55@2008-08-29",
+    "59@2008-08-29",
+    "62@2008-08-29",
+    "63@2008-08-29",
+    "65@2008-08-29",
+    "66@2008-08-29",
+    "70@2008-08-29",
+    "71@2008-08-29",
+    "72@2008-08-29",
+    "73@2014-07-07",
+    "74@2008-08-29",
+    "74@2014-07-07",
+    "74@2019-06-06",
+    "76@2008-08-29",
+    "77@2008-08-29",
+    "79@2014-02-10",
+    "79@2019-06-06",
+    "80@2008-08-29",
+    "83@2008-08-29",
+    "84@2008-08-29",
+    "87@2008-08-29",
+    "91@2008-08-29",
+    "94@2008-08-29",
+    "94@2014-02-10",
+    "97@2008-08-29",
+    "97@2014-02-10",
+    "97@2014-07-07",
+    "100@2008-08-29",
+    "102@2008-08-29",
+    "104@2008-08-29",
+    "107@2008-08-29",
+    "111@2008-08-29",
+    "114@2008-08-29",
+    "116@2008-08-29",
+    "116@2014-07-07",
+    "117@2008-08-29",
+    "119@2008-08-29",
+    "121@2008-08-29",
+    "122@2008-08-29",
+    "122@2019-06-06",
+    "123@2014-02-10",
+    "126@2008-08-29",
+    "130@2008-08-29",
+    "131@2008-08-29"
+   ]
+  },
+  "orig1917": {
+   "note": "Words per article in 1917 (estimate from the PDF) against 2006 for the articles never reformed; they should be equal.",
+   "articles": 17,
+   "absoluteDifference": 18,
+   "wordsCompared": 770
+  }
+ }
+}

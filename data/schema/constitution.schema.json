@@ -1,0 +1,120 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "constitution.schema.json",
+  "title": "constitution.json: reform decrees of the Mexican Constitution since 1917, by article, president and legislature",
+  "type": "object",
+  "required": ["generated", "asOf", "decrees", "articles", "presidents", "legislatures", "keyMoments"],
+  "additionalProperties": false,
+  "definitions": {
+    "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "url": { "type": "string", "pattern": "^https://" },
+    "errata": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["kind", "date", "url"],
+        "additionalProperties": false,
+        "properties": {
+          "kind": { "enum": ["errata", "aclaracion"] },
+          "date": { "$ref": "#/definitions/date" },
+          "url": { "$ref": "#/definitions/url" }
+        }
+      }
+    }
+  },
+  "properties": {
+    "generated": { "$ref": "#/definitions/date", "description": "Day the data was built." },
+    "asOf": { "$ref": "#/definitions/date", "description": "DOF date of the latest decree." },
+    "decrees": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["n", "date", "title", "summary", "note", "url", "doc", "process", "errata", "articles", "president", "legislature"],
+        "additionalProperties": false,
+        "properties": {
+          "n": { "type": "integer", "minimum": 1, "description": "Decree number in the Cámara's chronological list." },
+          "date": { "$ref": "#/definitions/date", "description": "DOF publication date." },
+          "title": { "type": "string", "minLength": 10 },
+          "summary": { "type": ["string", "null"], "description": "The Cámara's summary of the decree, when it has one." },
+          "note": { "type": ["string", "null"] },
+          "url": { "anyOf": [{ "$ref": "#/definitions/url" }, { "type": "null" }], "description": "Decree as published (PDF or scanned image)." },
+          "doc": { "anyOf": [{ "$ref": "#/definitions/url" }, { "type": "null" }] },
+          "process": { "anyOf": [{ "$ref": "#/definitions/url" }, { "type": "null" }], "description": "Legislative process, when linked." },
+          "errata": { "$ref": "#/definitions/errata" },
+          "articles": { "type": "array", "items": { "type": "string", "pattern": "^\\d{1,3}$" }, "description": "Articles 1 to 136 the decree amended, per the Cámara's by-article list." },
+          "president": { "type": "string", "pattern": "^[a-z-]+$" },
+          "legislature": { "type": ["string", "null"], "pattern": "^[LXVI]+$" }
+        }
+      }
+    },
+    "articles": {
+      "type": "array",
+      "minItems": 136,
+      "maxItems": 136,
+      "items": {
+        "type": "object",
+        "required": ["id", "titulo", "capitulo", "reforms", "errata", "words1917", "words2006", "wordsNow", "textVersions", "citedBy"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^\\d{1,3}$" },
+          "titulo": { "type": ["string", "null"] },
+          "capitulo": { "type": ["string", "null"] },
+          "reforms": { "type": "array", "items": { "type": "integer", "minimum": 1 }, "description": "Decree numbers, in order." },
+          "errata": { "$ref": "#/definitions/errata" },
+          "words1917": { "type": ["integer", "null"], "minimum": 0, "description": "Estimate from the 1917 transcription." },
+          "words2006": { "type": ["integer", "null"], "minimum": 0 },
+          "wordsNow": { "type": "integer", "minimum": 0 },
+          "textVersions": { "type": "integer", "minimum": 0 },
+          "citedBy": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 1 }, "description": "Law slug to number of citations of this article." }
+        }
+      }
+    },
+    "presidents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "short", "officialName", "start", "end", "decrees", "reportedArticles"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z-]+$" },
+          "name": { "type": "string" },
+          "short": { "type": "string" },
+          "officialName": { "type": "string" },
+          "start": { "$ref": "#/definitions/date" },
+          "end": { "$ref": "#/definitions/date" },
+          "decrees": { "type": "array", "items": { "type": "integer", "minimum": 1 } },
+          "reportedArticles": { "type": ["integer", "null"], "description": "Total printed on the Cámara's by-term page (counts transitory articles too)." }
+        }
+      }
+    },
+    "legislatures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "start", "end", "decrees"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[LXVI]+$" },
+          "start": { "$ref": "#/definitions/date" },
+          "end": { "$ref": "#/definitions/date" },
+          "decrees": { "type": "array", "items": { "type": "integer", "minimum": 1 } }
+        }
+      }
+    },
+    "keyMoments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["n", "priority", "es", "en"],
+        "additionalProperties": false,
+        "properties": {
+          "n": { "type": "integer", "minimum": 1 },
+          "priority": { "enum": [1, 2] },
+          "es": { "type": "string" },
+          "en": { "type": "string" }
+        }
+      }
+    }
+  }
+}
