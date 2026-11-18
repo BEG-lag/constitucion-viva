@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Constitución viva · 1917–2026</title>
+    <meta name="description" content="Las 285 reformas a la Constitución mexicana de 1917, artículo por artículo, con los cambios de texto palabra por palabra desde 2006 y la red de citas de 36 leyes federales." />
+    <meta name="theme-color" content="#0a0c10" />
+    <meta name="color-scheme" content="dark" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Constitución viva · 1917–2026" />
+    <meta property="og:description" content="285 decretos, 857 reformas a artículos, 109 años: la Constitución mexicana viva." />
+    <meta property="og:url" content="https://beg-lag.github.io/constitucion-viva/" />
+    <meta property="og:image" content="https://beg-lag.github.io/constitucion-viva/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="%BASE_URL%data/constitution.json" as="fetch" crossorigin />
+  </head>
+  <body>
+    <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Constitución viva">
+        <span class="brand-dot" aria-hidden="true"></span><span>constitución</span><span class="brand-thin">viva</span>
+      </a>
+      <nav aria-label="Secciones" class="nav">
+        <a href="#historia" data-i18n="nav.story">Historia</a>
+        <a href="#maquina" data-i18n="nav.machine">Máquina del tiempo</a>
+        <a href="#ranking" data-i18n="nav.ranking">Ranking</a>
+        <a href="#crecimiento" data-i18n="nav.growth">Crecimiento</a>
+        <a href="#red" data-i18n="nav.web">Red de leyes</a>
+        <a href="#metodo" data-i18n="nav.method">Método</a>
+      </nav>
+      <button type="button" class="lang" id="lang-toggle" data-i18n-label="lang.label"><span data-i18n="lang.switch">English</span></button>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section id="inicio" class="hero" aria-labelledby="hero-title">
+        <canvas class="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-inner wrap">
+          <p class="kicker" data-i18n="hero.kicker">Constitución Política de los Estados Unidos Mexicanos · 1917–2026</p>
+          <h1 id="hero-title" class="hero-title">
+            <span class="hero-number" id="hero-number">285</span>
+            <span class="hero-unit" data-i18n="hero.unit">decretos de reforma</span>
+          </h1>
+          <p class="hero-line display" data-i18n="hero.line">Una constitución que nunca ha dejado de escribirse.</p>
+          <p class="hero-sub" id="hero-sub"></p>
+          <ul class="hero-stats" id="hero-stats"></ul>
+          <p class="hero-asof mono" id="hero-asof"></p>
+          <p class="sr-only" id="hero-canvas-desc"></p>
+          <a class="hero-cue" href="#historia"><span data-i18n="hero.cue">Desliza para empezar</span><span aria-hidden="true" class="cue-line"></span></a>
+        </div>
+      </section>
+
+      <section id="historia" class="story" aria-labelledby="story-title">
+        <div class="wrap section-head">
+          <p class="kicker" data-i18n="story.kicker">Historia</p>
+          <h2 id="story-title" data-i18n="story.title">Un siglo de reformas, decreto por decreto</h2>
+        </div>
+        <div class="story-grid wrap">
+          <figure class="story-figure" id="story-figure">
+            <div class="story-chart" id="story-chart"></div>
+            <figcaption class="sr-only" id="story-caption"></figcaption>
+          </figure>
+          <div class="story-steps" id="story-steps"></div>
+        </div>
+      </section>
+
+      <section id="maquina" class="machine" aria-labelledby="machine-title">
+        <div class="wrap section-head">
+          <p class="kicker" data-i18n="machine.kicker">Máquina del tiempo</p>
+          <h2 id="machine-title" data-i18n="machine.title">Los 136 artículos, encendiéndose</h2>
+          <p class="lede" data-i18n="machine.lede"></p>
+        </div>
+        <div class="wrap" id="machine-root"></div>
+      </section>
+
+      <section id="ranking" class="ranking" aria-labelledby="ranking-title">
+        <div class="wrap section-head">
+          <p class="kicker" data-i18n="ranking.kicker">Ranking</p>
+          <h2 id="ranking-title" data-i18n="ranking.title">Qué cambió y quién lo cambió</h2>
+          <p class="lede" id="ranking-lede"></p>
+        </div>
+        <div class="wrap" id="ranking-root"></div>
+      </section>
+
+      <section id="crecimiento" class="growth" aria-labelledby="growth-title">
+        <div class="wrap section-head">
+          <p class="kicker" data-i18n="growth.kicker">Crecimiento</p>
+          <h2 id="growth-title" data-i18n="growth.title">Una constitución cada vez más larga</h2>
+          <p class="lede" data-i18n="growth.lede"></p>
+        </div>
+        <div class="wrap" id="growth-root"></div>
+      </section>
+
+      <section id="red" class="web" aria-labelledby="web-title">
+        <div class="wrap section-head">
+          <p class="kicker" data-i18n="web.kicker">Red de leyes</p>
+          <h2 id="web-title" data-i18n="web.title">Cómo se citan 36 leyes federales</h2>
+          <p class="lede" data-i18n="web.lede"></p>
+        </div>
+        <div class="wrap" id="web-root"></div>
+      </section>
+
+      <section id="metodo" class="method" aria-labelledby="method-title">
+        <div class="wrap section-head">
+          <p class="kicker" data-i18n="method.kicker">Método</p>
+          <h2 id="method-title" data-i18n="method.title">Fuentes, método y límites</h2>
+        </div>
+        <div class="wrap method-grid" id="method-root"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <p class="disclaimer" data-i18n="method.disclaimer">No oficial. Solo el Diario Oficial de la Federación tiene validez oficial. No es asesoría legal.</p>
+        <p class="mono footer-meta" id="footer-meta"></p>
+        <a class="mono" href="#inicio" data-i18n="footer.top">Volver arriba</a>
+      </div>
+    </footer>
+
+    <dialog id="article-dialog" class="article-dialog" aria-labelledby="article-title"></dialog>
+    <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+    <noscript><p class="noscript">Esta experiencia necesita JavaScript. Los datos están en la carpeta data/ del repositorio.</p></noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
