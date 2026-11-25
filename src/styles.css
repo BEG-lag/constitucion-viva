@@ -163,6 +163,43 @@ code {
   margin-right: 4px;
 }
 
+/* PIVOTEK logo next to the site name (orange on ink). The logotype is never
+   narrower than 90px: where the bar runs out of room the isotype takes its
+   place (see the media queries below). */
+.pvk {
+  display: flex;
+  align-items: center;
+  flex: none;
+  height: 22px;
+  margin-left: -8px;
+  padding-left: 16px;
+  border-left: 1px solid var(--line);
+}
+
+.pvk:hover {
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+/* Optical alignment: the lowercase of "pivotek" sits on the baseline of the
+   site name, and so does the bowl of the isotype's p. */
+.pvk img {
+  display: block;
+  transform: translateY(2px);
+}
+
+.pvk .pvk-iso {
+  transform: translateY(4px);
+}
+
+.pvk-iso {
+  display: none !important;
+}
+
+.lang-short {
+  display: none;
+}
+
 .nav {
   display: flex;
   gap: 18px;
@@ -201,12 +238,40 @@ code {
   background: var(--paper);
 }
 
-@media (max-width: 900px) {
+/* The full nav fits next to the logotype from 1080px and next to the isotype
+   from 1010px (room left for a classic scrollbar); below that the nav hides
+   and the logotype comes back down to 440px. */
+@media (min-width: 1010px) and (max-width: 1079px), (max-width: 439px) {
+  .pvk-logo {
+    display: none !important;
+  }
+  .pvk-iso {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1009px) {
   .nav {
     display: none;
   }
   .lang {
     margin-left: auto;
+  }
+}
+
+/* Narrowest phones: tighter gaps and a two-letter language button. */
+@media (max-width: 360px) {
+  .topbar {
+    gap: 16px;
+  }
+  .pvk {
+    margin-left: 0;
+  }
+  .lang-long {
+    display: none;
+  }
+  .lang-short {
+    display: inline;
   }
 }
 

@@ -16,6 +16,7 @@ const es = {
   'nav.web': 'Red de leyes',
   'nav.method': 'Método',
   'lang.switch': 'English',
+  'lang.short': 'EN',
   'lang.label': 'Cambiar idioma a inglés',
 
   'hero.kicker': 'Constitución Política de los Estados Unidos Mexicanos · 1917–2026',
@@ -216,6 +217,7 @@ const en: Record<Key, string> = {
   'nav.web': 'Web of laws',
   'nav.method': 'Method',
   'lang.switch': 'Español',
+  'lang.short': 'ES',
   'lang.label': 'Cambiar el idioma a español',
 
   'hero.kicker': 'Political Constitution of the United Mexican States · 1917–2026',
