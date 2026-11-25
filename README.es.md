@@ -1,4 +1,8 @@
 <p align="center">
+  <a href="https://pivotek.mx"><img src="assets/pivotek-logo.svg" alt="PIVOTEK" width="200"></a>
+</p>
+
+<p align="center">
   <img src="assets/banner.svg" alt="constitución viva: 285 decretos de reforma a la Constitución mexicana desde 1917, dibujados como barras de 1917 a 2026" width="100%">
 </p>
 

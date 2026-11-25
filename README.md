@@ -1,4 +1,8 @@
 <p align="center">
+  <a href="https://pivotek.mx"><img src="assets/pivotek-logo.svg" alt="PIVOTEK" width="200"></a>
+</p>
+
+<p align="center">
   <img src="assets/banner.svg" alt="constitución viva: 285 reform decrees to the Mexican Constitution since 1917, drawn as bars from 1917 to 2026" width="100%">
 </p>
 
