@@ -377,6 +377,14 @@ svg text {
   white-space: nowrap;
 }
 
+/* chips sit in wrapping rows: a label longer than the row breaks inside the
+   chip instead of pushing the page wider on phones */
+.chip {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
 .btn:hover,
 .chip:hover {
   border-color: var(--paper);

@@ -84,20 +84,22 @@ function render(ctx: Ctx, root: HTMLElement, g: Growth): void {
     const boxes: { x0: number; x1: number; row: number }[] = [];
     for (const v of [...jumps].sort((a, b) => b.date.localeCompare(a.date))) {
       const k = v.decrees.map((n) => moments.get(n)).find(Boolean);
-      const text = `${v.date.slice(0, 4)} +${fmt(v.added - v.removed)}${k ? ` · ${k[getLang()]}` : ''}`;
+      const head = `${v.date.slice(0, 4)} +${fmt(v.added - v.removed)}`;
       const xx = x(fyear(v.date));
       const yy = y(v.words);
-      const w = text.length * 6.4;
       const x1 = Math.min(width - m.right, xx + 6);
+      // A label that would run past the left edge (narrow charts) goes on two lines.
+      let lines = [k ? `${head} · ${k[getLang()]}` : head];
+      if (k && x1 - lines[0]!.length * 6.4 < 0) lines = [head, k[getLang()]];
+      const w = Math.max(...lines.map((l) => l.length * 6.4));
       const x0 = x1 - w;
+      const taken = (r: number) => boxes.some((b) => b.row === r && !(x1 < b.x0 - 6 || x0 > b.x1 + 6));
       let row = 0;
-      while (boxes.some((b) => b.row === row && !(x1 < b.x0 - 6 || x0 > b.x1 + 6))) row++;
-      boxes.push({ x0, x1, row });
+      while (lines.some((_, i) => taken(row + i))) row++;
+      lines.forEach((_, i) => boxes.push({ x0, x1, row: row + i }));
       const ty = m.top + 8 + row * 15;
-      svg.append(
-        s('line', { x1: xx, x2: xx, y1: yy - 6, y2: ty + 4, stroke: COLORS.paper, 'stroke-width': 1, opacity: 0.4 }),
-        s('text', { x: x1, y: ty, 'text-anchor': 'end', fill: COLORS.paper, 'font-size': 10.5, text }),
-      );
+      svg.append(s('line', { x1: xx, x2: xx, y1: yy - 6, y2: ty + (lines.length - 1) * 15 + 4, stroke: COLORS.paper, 'stroke-width': 1, opacity: 0.4 }));
+      lines.forEach((text, i) => svg.append(s('text', { x: x1, y: ty + i * 15, 'text-anchor': 'end', fill: COLORS.paper, 'font-size': 10.5, text })));
     }
     // focusable version dots
     for (const p of pts.slice(0, -1)) {
